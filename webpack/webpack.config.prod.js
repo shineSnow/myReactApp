@@ -7,8 +7,8 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = merge(webpackCommon, {
     entry:{
-        index:path.resolve(__dirname, '../src/index.js'),
-        vendor:['moment','jquery']
+        index:path.resolve(__dirname, '../src/app.js'),
+        vendor:['moment']
     },
     output:{
         filename: "[name].[chunkhash].js",

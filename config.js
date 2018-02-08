@@ -1,4 +1,4 @@
- return {
+ modules.export =  {
      proxyOption:{
         target: 'http://www.example.org', // target host
         changeOrigin: true,               // needed for virtual hosted sites

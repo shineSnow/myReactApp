@@ -8,7 +8,7 @@ module.exports = merge(webpackCommon,{
         index:[
             'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
             'webpack/hot/only-dev-server',
-            path.resolve(__dirname, '../src/index.js'),
+            path.resolve(__dirname, '../src/app.js'),
         ],
         vendor:['moment']
     },

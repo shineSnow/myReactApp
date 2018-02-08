@@ -1,18 +1,13 @@
 var webpackDevMiddleware = require('webpack-dev-middleware');
-　　
 var webpackHotMiddleware = require('webpack-hot-middleware');
-　　
-
-　　
+　　　
 Object.keys(webpackConfig.entry).forEach(function(name){
 　　webpackConfig.entry[name] = ['webpack-hot-middleware/client'].concat(webpackConfig.entry[name]);
 　　
 })
 　　
 var compiler = webpack(webpackConfig);
-　　
-
-　　
+　　　　
 var devMiddleware = webpackDevMiddleware(compiler, {
 　　publicPath: webpackConfig.output.publicPath,
 　　hot: true,
