@@ -1,12 +1,19 @@
 import 'normalize.css';
 import React from 'react'
 import ReactDOM from 'react-dom'
-import {test} from './views/Test/index'
+import 'antd/dist/antd.css'
+import {Button} from 'antd'
 
-if(module.hot) { module.hot.accept()}
+if (module.hot) {
+    module.hot.accept()
+}
 
-setTimeout(test,3000)
 ReactDOM.render(
-    <h1>Hello, world hwllo!</h1>,
-    document.getElementById('root')
+    <div>
+        <Button type="primary">Primary</Button>
+        <Button>Default</Button>
+        <Button type="dashed">Dashed</Button>
+        <Button type="danger">Danger</Button>
+    </div>
+    ,document.getElementById('root')
 );

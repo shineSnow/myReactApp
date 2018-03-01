@@ -43,7 +43,7 @@ module.exports = merge(webpackCommon,{
                     path.join(__dirname,'../node_modules'),
                     path.join(__dirname,'../assets/font'),
                 ],
-                use:['style-loader','css-loader','postcss-loader']
+                use:['style-loader','css-loader']
             },
         ]
     },
