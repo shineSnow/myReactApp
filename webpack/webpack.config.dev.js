@@ -24,6 +24,7 @@ module.exports = merge(webpackCommon,{
                     path.join(__dirname,'../node_modules'),
                     path.join(__dirname,'../assets/font'),
                 ],
+                include:[path.join(__dirname,'../src')],
                 use:[
                     'style-loader',
                     {
@@ -43,6 +44,7 @@ module.exports = merge(webpackCommon,{
                     path.join(__dirname,'../node_modules'),
                     path.join(__dirname,'../assets/font'),
                 ],
+                exclude:[path.join(__dirname,'../src')],
                 use:['style-loader','css-loader']
             },
         ]

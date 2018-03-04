@@ -10,7 +10,8 @@ module.exports = {
     resolve: {
         extensions:[".js", ".json", ".css"],
         alias:{
-            ASSETS:path.resolve(__dirname,'../assets'),
+            ASSETS:path.resolve(__dirname,'../src/assets'),
+            CMP:path.resolve(__dirname,'../src/components'),
             API:path.resolve(__dirname,"../src/api"),
             VIWES:path.resolve(__dirname,'../src/views')
         }
