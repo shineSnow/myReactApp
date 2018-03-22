@@ -18,6 +18,11 @@ module.exports = merge(webpackCommon, {
         rules:[
             {
                 test: /\.css$/,
+                exclude:[
+                    path.join(__dirname,'../node_modules'),
+                    path.join(__dirname,'../assets/font'),
+                ],
+                include:[path.join(__dirname,'../src')],
                 use: ExtractTextPlugin.extract({
                   fallback: "style-loader",
                   use:[
@@ -33,6 +38,15 @@ module.exports = merge(webpackCommon, {
                     ]
                 })
             },
+            {
+                test: /\.css$/,
+                include:[
+                    path.join(__dirname,'../node_modules'),
+                    path.join(__dirname,'../assets/font'),
+                ],
+                exclude:[path.join(__dirname,'../src')],
+                use:['style-loader','css-loader']
+            }
         ]
     },
     plugins:[

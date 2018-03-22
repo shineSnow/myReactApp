@@ -46,7 +46,7 @@ module.exports = merge(webpackCommon,{
                 ],
                 exclude:[path.join(__dirname,'../src')],
                 use:['style-loader','css-loader']
-            },
+            }
         ]
     },
     plugins:[

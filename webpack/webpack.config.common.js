@@ -13,7 +13,6 @@ module.exports = {
             ASSETS:path.resolve(__dirname,'../src/assets'),
             CMP:path.resolve(__dirname,'../src/components'),
             API:path.resolve(__dirname,"../src/api"),
-            VIWES:path.resolve(__dirname,'../src/views')
         }
     },
     module:{
@@ -35,7 +34,7 @@ module.exports = {
     },
     plugins:[
         new HtmlWebpackPlugin({
-            title:'WEBPACK',
+            title:'myreactapp',
             template:'./index.html',
             inject:'body'
         }),
