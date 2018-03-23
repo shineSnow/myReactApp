@@ -17,7 +17,7 @@ module.exports = merge(webpackCommon,{
     output:{
         filename:'[name].js',
     },
-    devtool:'source-map',
+    devtool:'cheap-module-eval-source-map',
     module:{
         rules:[
             {

@@ -14,25 +14,31 @@ export default class extends Component {
             return res.json()
         }).then(result => {
             let {code,data} = result
-            console.log(code,data)
             this.setState({
                 arrList: data
             })
         })
     }
     render() {
-        console.log(this)
+        // console.log(this)
         return (
             <div className={style.wrap}>
                 <h3>配置千奇百怪,查阅大量资料，有时候也不是很清楚只能走一步是一步</h3>
-                {
-                    this.state.arrList.map((val, i) =>{
-                        return <div>
-                                     <img key={val.goodsId} src={val.goodsImage}/><span>{val.goodsId}</span>
-                               </div>
+                <ul>
+                    {
+                        this.state.arrList.map((val, i) =>{
+                            return  <li key={val.goodsId}>
+                                <img src={val.goodsImage}/>
+                                <span>{val.goods.introduce}</span>
+                                <span className="price">价格：￥{val.goods.marketPrice}</span>
+                                <p className="des">{val.goods.title}</p>
+                                <p className="address">{val.goods.goodsSource}</p>
+                            </li>
 
-                    })
-                }
+                        })
+                    }
+                </ul>
+
             </div>
         )
     }

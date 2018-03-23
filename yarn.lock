@@ -2268,7 +2268,7 @@ faye-websocket@~0.11.0:
   dependencies:
     websocket-driver ">=0.5.1"
 
-fbjs@^0.8.0, fbjs@^0.8.15, fbjs@^0.8.16, fbjs@^0.8.9:
+fbjs@^0.8.1, fbjs@^0.8.15, fbjs@^0.8.16, fbjs@^0.8.9:
   version "0.8.16"
   resolved "http://registry.npm.taobao.org/fbjs/download/fbjs-0.8.16.tgz#5e67432f550dc41b572bf55847b8aca64e5337db"
   dependencies:
@@ -4996,9 +4996,9 @@ rc@^1.1.7:
     minimist "^1.2.0"
     strip-json-comments "~2.0.1"
 
-react-dom@15.0.0:
-  version "15.0.0"
-  resolved "http://registry.npm.taobao.org/react-dom/download/react-dom-15.0.0.tgz#49a91a663d8ff9f699eb4997f0027ead8abe0d44"
+react-dom@15.3.0:
+  version "15.3.0"
+  resolved "http://registry.npm.taobao.org/react-dom/download/react-dom-15.3.0.tgz#24a6a3df67969656b8a8225fd0d7fcb939d28bdd"
 
 react-hot-loader@^4.0.0:
   version "4.0.0"
@@ -5041,13 +5041,13 @@ react-slick@~0.17.0:
     object-assign "^4.1.0"
     opencollective "^1.0.3"
 
-react@15.0.0:
-  version "15.0.0"
-  resolved "http://registry.npm.taobao.org/react/download/react-15.0.0.tgz#3c7e16531d630e15c1a50a947f14ba61746af8a7"
+react@15.3.0:
+  version "15.3.0"
+  resolved "http://registry.npm.taobao.org/react/download/react-15.3.0.tgz#b06a26d26e5613888acb196aa93e9c082a9c21fa"
   dependencies:
-    fbjs "^0.8.0"
+    fbjs "^0.8.1"
     loose-envify "^1.1.0"
-    object-assign "^4.0.1"
+    object-assign "^4.1.0"
 
 read-pkg-up@^1.0.1:
   version "1.0.1"

@@ -1,0 +1,49 @@
+.wrapper{
+  height:100vh;
+}
+.logo{
+  height: 32px;
+  line-height:32px;
+  text-align: center;
+  background: rgba(255,255,255,.2);
+  margin: 16px;
+  color: #fff;
+}
+.sider{
+  overflow: auto;
+  height: 100vh;
+  position: fixed;
+  left: 0
+}
+
+.pright{
+  padding-top:64px;
+  margin-left:200px;
+}
+
+.header{
+  position: fixed;
+  top:0;
+  width:100%;
+  background: #fff;
+  padding: 0
+}
+.trigger{
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color .3s;
+}
+.trigger:hover {
+  color: #1890ff;
+}
+.content{
+  margin: 24px 16px 0;
+  overflow: initial
+}
+
+.footer{
+  text-align: center;
+}
+

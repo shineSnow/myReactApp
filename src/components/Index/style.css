@@ -1,4 +1,7 @@
 .wrap{}
+.wrap li {
+  text-align: left;
+}
 .wrap img {
   width:100px;
 }
