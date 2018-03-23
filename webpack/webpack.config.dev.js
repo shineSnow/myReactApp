@@ -6,9 +6,11 @@ const webpackCommon = require('./webpack.config.common.js')
 module.exports = merge(webpackCommon,{
     entry:{
         index:[
+            'babel-polyfill',
+            'react-hot-loader/patch',
             'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=20000&reload=true',
             'webpack/hot/only-dev-server',
-            path.resolve(__dirname, '../src/app.js'),
+            path.resolve(__dirname, '../src/index.js'),
         ],
         vendor:['moment']
     },
