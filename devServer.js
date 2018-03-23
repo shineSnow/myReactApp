@@ -5,7 +5,7 @@ const webpackHotMiddleware = require('webpack-hot-middleware');
 const history = require('connect-history-api-fallback')
 const proxy = require('http-proxy-middleware');
 const proxyOption={
-        target: 'https://m.example.com', // target host
+        target: 'https://m.kaola.com', // target host
         changeOrigin: true,               // needed for virtual hosted sites
       }
 const app = express();
