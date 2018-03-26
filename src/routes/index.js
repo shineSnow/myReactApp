@@ -17,11 +17,11 @@ module.exports = [
         ]
     },
     {
-        path: '*',
-        component:'Error'
-    },
-    {
         path: 'test',
         component: Test,
+    },
+    {
+        path: '*',
+        component:Error
     }
 ]

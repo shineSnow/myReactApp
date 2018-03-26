@@ -4,11 +4,12 @@ const path = require('path')
 const webpackCommon = require('./webpack.config.common')
 const UglifyJSPlugin = require('uglifyjs-webpack-plugin');
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const vendors = require('./vendors')
 
 module.exports = merge(webpackCommon, {
     entry:{
         index:path.resolve(__dirname, '../src/index.js'),
-        vendor:['moment']
+        vendor:vendors
     },
     output:{
         filename: "[name].[chunkhash].js",

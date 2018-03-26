@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import { Layout, Menu, Icon } from 'antd';
 const { Header, Sider, Content, Footer} = Layout;
 const SubMenu = Menu.SubMenu;
+import {Link} from 'react-router'
 import style from './style.css'
 export default class extends Component {
     constructor() {
@@ -33,8 +34,8 @@ export default class extends Component {
                         inlineCollapsed={this.state.collapsed}
                     >
                         <SubMenu key="sub1" title={<span><Icon type="mail" /><span>Navigation One</span></span>}>
-                            <Menu.Item key="5">Option 5</Menu.Item>
-                            <Menu.Item key="6">Option 6</Menu.Item>
+                            <Menu.Item key="5"><Link to="/">home</Link></Menu.Item>
+                            <Menu.Item key="6"><Link to="/test">test</Link></Menu.Item>
                             <Menu.Item key="7">Option 7</Menu.Item>
                             <Menu.Item key="8">Option 8</Menu.Item>
                         </SubMenu>
