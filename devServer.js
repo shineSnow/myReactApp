@@ -2,7 +2,7 @@ const express = require('express');
 const webpack = require('webpack');
 const webpackDevMiddleware = require('webpack-dev-middleware');
 const webpackHotMiddleware = require('webpack-hot-middleware');
-const history = require('connect-history-api-fallback')
+// const history = require('connect-history-api-fallback')
 const proxy = require('http-proxy-middleware');
 const proxyOption={
         target: 'https://m.kaola.com', // target host
@@ -12,7 +12,7 @@ const app = express();
 const config = require('./webpack/webpack.config.dev.js');
 const compiler = webpack(config);
 
-app.use(history({verbose:true}))
+// app.use(history({verbose:true}))
 // Tell express to use the webpack-dev-middleware and use the webpack.config.js
 // configuration file as a base.
 app.use(webpackDevMiddleware(compiler, {

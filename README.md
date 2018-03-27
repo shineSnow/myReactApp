@@ -10,5 +10,7 @@
 https://blog.csdn.net/sanstu/article/details/76064255  
 https://blog.csdn.net/lambert0320/article/details/73347621
 
+# ReactApp master分支切换hashHistory
+
 
 
